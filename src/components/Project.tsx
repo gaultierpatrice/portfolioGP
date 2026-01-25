@@ -1,14 +1,14 @@
 export default function Project() {
   return (
-    <div className="mt-2.5 p-2 flex flex-col items-center max-w-5/6 sm:px-20">
-      <h2>Collaborative Project</h2>
-      <div className=" flex flex-col items-center">
+    <div>
+      <h2 className="p-5">Collaborative Project</h2>
+      <div className=" flex flex-col items-center justify-center">
         <a
           target="_blank"
           href="https://eataround.co/"
-          className="group relative block max-w-xs"
+          className="group relative block max-w-9/12"
         >
-          <div className="max-w-xs ">
+          <div className="">
             <img
               id="imgEA"
               src="../image/screenshots/projets/eataround.png"
@@ -34,7 +34,7 @@ export default function Project() {
           </div>
         </a>
 
-        <h3>
+        <h3 className="p-5">
           In collaboration with Valentin Orrit, close friend also in retraining
         </h3>
       </div>

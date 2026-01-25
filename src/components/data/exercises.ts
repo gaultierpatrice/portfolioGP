@@ -1,5 +1,13 @@
 export const exercises = [
   {
+    title: "Adaopte",
+    date: "January 2026",
+    goal: "Build a pet adoption platform with database approach",
+    stack: ["Vite", "React", "Tailwing", "DrawSQL"],
+    image: "/image/screenshots/exercices/adaopte.png",
+    link: "https://adaoptemg.vercel.app/",
+  },
+  {
     title: "Dataviz",
     date: "November 2025",
     goal: "Display data from opendata.paris.fr API",

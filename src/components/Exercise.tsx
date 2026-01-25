@@ -10,10 +10,10 @@ import { exercises } from "@/components/data/exercises.ts";
 
 export default function Exercise() {
   return (
-    <div id="carousel" className="mt-2w-full flex flex-col items-center">
-      <h2>Exercises @ A.T.School</h2>
+    <div id="carousel" className="mt-2 w-full flex flex-col items-center">
+      <h2 className="p-5">Exercises @ A.T.School</h2>
       <Carousel opts={{ loop: true }} className="">
-        <CarouselContent className="w-md">
+        <CarouselContent className="w-sm md:w-md">
           {exercises.map((exercise, index) => (
             <CarouselItem key={index}>
               <a
@@ -22,7 +22,7 @@ export default function Exercise() {
                 className="group relative block bg-sky-500/75"
               >
                 <Card>
-                  <CardContent className="relative flex flex-col items-center w-full max-w-sm md:max-w-md">
+                  <CardContent className="relative flex flex-col items-center w-full">
                     {exercise.image && (
                       <img
                         src={exercise.image}
@@ -48,7 +48,7 @@ export default function Exercise() {
                 </Card>
               </a>
               {exercise.stack?.length > 0 && (
-                <p>Techno: {exercise.stack.join(", ")}</p>
+                <p className="p-5">Techno: {exercise.stack.join(", ")}</p>
               )}
             </CarouselItem>
           ))}

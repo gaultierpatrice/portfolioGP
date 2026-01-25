@@ -12,20 +12,18 @@ function App() {
       <div className=" flex flex-col items-center">
         <Header />
 
-        <div className=" flex flex-col px-10 sm:flex-row sm:px-30">
-          <div className="flex-1 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 mt-5">
+          <div className="h-full bg-gray-100">
+            <Exercise />
+          </div>
+          <div className="h-full bg-gray-100 flex flex-col">
+            <Project />
+          </div>
+          <div className="h-full">
             <Intro />
           </div>
-          <div className="flex-1 flex flex-col justify-center items-center">
+          <div className="h-full">
             <Contact />
-          </div>
-        </div>
-        <div className=" flex flex-col sm:flex-row sm:px-30">
-          <div className="flex flex-col flex-1  md:flex-row">
-            <Project />
-            <div className="flex-1 ">
-              <Exercise />
-            </div>
           </div>
         </div>
 
