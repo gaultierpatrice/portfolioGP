@@ -6,7 +6,7 @@ export default function Project() {
         <a
           target="_blank"
           href="https://eataround.co/"
-          className="group relative block max-w-9/12"
+          className="group relative block max-w-3/5"
         >
           <div className="">
             <img

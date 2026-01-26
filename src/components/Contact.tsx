@@ -1,6 +1,7 @@
 export default function Contact() {
   return (
     <div className="flex flex-col justify-between items-center gap-3">
+      <h2 className="p-5">Contacts</h2>
       <a
         href="mailto:hello@example.com"
         target="blank"

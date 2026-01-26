@@ -13,9 +13,10 @@ export default function Exercise() {
     <div id="carousel" className="mt-2 w-full flex flex-col items-center">
       <h2 className="p-5">Exercises @ A.T.School</h2>
       <Carousel opts={{ loop: true }} className="">
-        <CarouselContent className="w-sm md:w-md">
+        <CarouselContent className="w-sm md:w-md lg:w-lg">
           {exercises.map((exercise, index) => (
             <CarouselItem key={index}>
+              <h4 className="py-2">{exercise.title}</h4>
               <a
                 href={exercise.link}
                 target="_blank"
@@ -32,11 +33,10 @@ export default function Exercise() {
                     )}
 
                     <div
-                      className="absolute inset-0 flex flex-col items-center justify-center text-center px-4
+                      className="absolute inset-0 flex flex-col items-center justify-around text-center
                 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 text-white"
                     >
                       <div>Click to Visit !!!</div>
-                      <h4>{exercise.title}</h4>
 
                       {exercise.date && (
                         <p className="text-sm ">{exercise.date}</p>
