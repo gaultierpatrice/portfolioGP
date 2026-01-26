@@ -3,7 +3,7 @@ export default function Intro() {
     <div className="flex flex-col">
       <div className="mt-5 flex flex-col min-height-screen">
         <div className="flex flex-col items-center">
-          <p className="p-3 px-10">
+          <p className="px-10">
             After 15 years working in the entertainment industry, I felt the
             need to change careers in order to settle down. In 2020, I started
             learning how to build websites, an experience that awakened a deep
