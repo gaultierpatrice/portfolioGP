@@ -1,12 +1,15 @@
 export default function Project() {
   return (
-    <div>
+    <div className="">
       <h2 className="p-5">Collaborative Project</h2>
+      <h3 className="p-5">
+        In collaboration with Valentin Orrit, close friend also in retraining
+      </h3>
       <div className=" flex flex-col items-center justify-center">
         <a
           target="_blank"
           href="https://eataround.co/"
-          className="group relative block max-w-3/5"
+          className="group relative block max-w-4/5"
         >
           <div className="">
             <img
@@ -21,22 +24,20 @@ export default function Project() {
                       opacity-0 group-hover:opacity-100 transition-opacity duration-300
                       bg-black/60 text-white"
             >
-              <div>Click to Visit EatAround !!!</div>
-              <p className="pt-2">
+              <h2 className="p-1 bg-amber-50 border-2 rounded-md">
+                Click to Visit EatAround !!!
+              </h2>
+              <h4 className="pt-2 text-2xl">
                 Eat Around is a web application designed to help users discover
                 and track dining establishments that cater to vegetarian, vegan,
                 gluten-free, lactose-free, halal, and kosher cuisines, including
                 restaurants, bakeries, and cafes nearby. The application
                 leverages the Google Maps API and Places services to provide
                 accurate location-based recommendations.
-              </p>
+              </h4>
             </div>
           </div>
         </a>
-
-        <h3 className="p-5">
-          In collaboration with Valentin Orrit, close friend also in retraining
-        </h3>
       </div>
     </div>
   );

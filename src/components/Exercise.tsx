@@ -11,12 +11,12 @@ import { exercises } from "@/components/data/exercises.ts";
 export default function Exercise() {
   return (
     <div id="carousel" className="mt-2 w-full flex flex-col items-center">
-      <h2 className="p-5">Exercises @ A.T.School</h2>
+      <h2 className="p-5 ">Exercises @ A.T.School</h2>
       <Carousel opts={{ loop: true }} className="">
         <CarouselContent className="w-sm md:w-md lg:w-lg">
           {exercises.map((exercise, index) => (
             <CarouselItem key={index}>
-              <h4 className="py-2">{exercise.title}</h4>
+              <h2 className="py-1 underline">{exercise.title}</h2>
               <a
                 href={exercise.link}
                 target="_blank"
@@ -36,20 +36,24 @@ export default function Exercise() {
                       className="absolute inset-0 flex flex-col items-center justify-around text-center
                 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 text-white"
                     >
-                      <div>Click to Visit !!!</div>
-
-                      {exercise.date && (
-                        <p className="text-sm ">{exercise.date}</p>
+                      <h2 className="bg-amber-50 border-2 rounded-md">
+                        Click to Visit !!!
+                      </h2>
+                      {exercise.goal && <h4>{exercise.goal}</h4>}
+                      {exercise.stack?.length > 0 && (
+                        <h4 className="p-2">
+                          Stack: {exercise.stack.join(", ")}
+                        </h4>
                       )}
-
-                      {exercise.goal && <p>{exercise.goal}</p>}
+                      {exercise.date && (
+                        <h3 className="p-1 bg-amber-50 border-2 rounded-md">
+                          {exercise.date}
+                        </h3>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
               </a>
-              {exercise.stack?.length > 0 && (
-                <p className="p-5">Techno: {exercise.stack.join(", ")}</p>
-              )}
             </CarouselItem>
           ))}
         </CarouselContent>
