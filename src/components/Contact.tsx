@@ -14,7 +14,7 @@ export default function Contact() {
         target="blank"
         className="border rounded-full p-3 bg-gray-200"
       >
-        Contact Linkedin
+        Linkedin
       </a>
       <a
         href="https://github.com/gaultierpatrice"
