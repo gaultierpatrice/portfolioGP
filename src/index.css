@@ -19,25 +19,31 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: clamp(2.2rem, 5vw, 3rem);
   color: #ec7124;
   font-family: "Aboreto", system-ui, sans-serif;
   font-weight: lighter;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
   color: #632f0f;
   font-weight: lighter;
 }
 h3 {
-  font-size: 1em;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   color: #632f0f;
   font-weight: lighter;
 }
 
 h4 {
   font-size: 1em;
+  font-weight: lighter;
+}
+
+h6 {
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  color: #632f0f;
   font-weight: lighter;
 }
 

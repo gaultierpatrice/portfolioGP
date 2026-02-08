@@ -9,9 +9,9 @@ import Contact from "./components/Contact.tsx";
 function App() {
   return (
     <>
-      <div className=" flex flex-col items-center">
+      <div className=" flex flex-col items-center bg-linear-to-b from-[#F6E8D6] to-white">
         <Header />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 bg-linear-to-b from-[#F6E8D6] to-white">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-5 ">
           <div className="h-full  rounded-md">
             <Exercise />
           </div>

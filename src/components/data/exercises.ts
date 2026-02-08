@@ -26,7 +26,7 @@ export const exercises = [
   {
     title: "FocusBoard",
     date: "February 2026",
-    goal: "Website to keep an online To-Do List",
+    goal: "Website to keep an online To-Do List with filtering and taging options",
     stack: ["DOM", "JAvascript", "LocalStorage"],
     image: "/image/screenshots/exercices/katatodo.png",
     link: "https://gaultierpatrice.github.io/kata_focusboard/",
@@ -40,9 +40,17 @@ export const exercises = [
     link: "https://gaultierpatrice.github.io/kata-mini-station-meteo/",
   },
   {
+    title: "Responsive Design",
+    date: "October 2025",
+    goal: "Reproducing a beautifull & responsive website from a template",
+    stack: ["Html", "Css"],
+    image: "/image/screenshots/exercices/cssavance.png",
+    link: "",
+  },
+  {
     title: "Quote Recorder",
     date: "November 2025",
-    goal: "Saving favorite quotes website",
+    goal: "Saving favorite quotes website - Localhost used to keep data if page is refreshed",
     stack: ["Vite", "React", "Tailwind"],
     image: "/image/screenshots/exercices/quotesapp.png",
     link: "https://quotesappreact.vercel.app/",
@@ -50,7 +58,7 @@ export const exercises = [
   {
     title: "Morse Translator",
     date: "October 2025",
-    goal: "Encrypt/Decrypt morse code tool",
+    goal: "Encrypt/Decrypt morse code tool - Fill input to try it",
     stack: ["DOM", "Javascript"],
     image: "/image/screenshots/exercices/morse.png",
     link: "https://gaultierpatrice.github.io/04_morse/",
@@ -58,7 +66,7 @@ export const exercises = [
   {
     title: "Kill The Monster",
     date: "October 2025",
-    goal: "Game with DOM manipulation",
+    goal: "Game with DOM manipulation - Halloween Theme",
     stack: ["DOM", "Javascript"],
     image: "/image/screenshots/exercices/monster.png",
     link: "https://killmonster.vercel.app/",
@@ -66,7 +74,7 @@ export const exercises = [
   {
     title: "Palindromes",
     date: "October 2025",
-    goal: "Algorithm with Promt",
+    goal: "Algorithm with Prompt - Checking if the date or phrase filled is a palindrome",
     stack: ["DOM", "Javascript"],
     image: "/image/screenshots/exercices/palindrome.png",
     link: "https://gaultierpatrice.github.io/06_palindrome/",
@@ -74,17 +82,9 @@ export const exercises = [
   {
     title: "Matches Game",
     date: "October 2025",
-    goal: "Game with DOM manipulation",
+    goal: "Game with DOM manipulation / Conditioning - Open console to play",
     stack: ["DOM", "Javascript"],
     image: "/image/screenshots/exercices/allumettes.png",
     link: "https://gaultierpatrice.github.io/03_allumettes/",
-  },
-  {
-    title: "Responsive Design",
-    date: "October 2025",
-    goal: "Mimic a beautifull & responsive website",
-    stack: ["Html", "Css"],
-    image: "/image/screenshots/exercices/cssavance.png",
-    link: "",
   },
 ];
