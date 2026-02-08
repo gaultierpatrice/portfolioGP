@@ -12,44 +12,79 @@ export default function Exercise() {
   return (
     <div id="carousel" className="mt-2 w-full flex flex-col items-center">
       <h2 className="p-5">Exercises @ A.T.School</h2>
-      <Carousel opts={{ loop: true }} className="">
-        <CarouselContent className="w-sm md:w-md">
+
+      <Carousel opts={{ loop: true }}>
+        <CarouselContent className="w-2xs md:w-md xl:w-2xl ">
           {exercises.map((exercise, index) => (
             <CarouselItem key={index}>
+              <h2 className="py-1 underline mb-5">{exercise.title}</h2>
+
               <a
                 href={exercise.link}
                 target="_blank"
-                className="group relative block bg-sky-500/75"
+                className="group relative block"
               >
                 <Card>
                   <CardContent className="relative flex flex-col items-center w-full">
+                    {/* Image */}
                     {exercise.image && (
                       <img
                         src={exercise.image}
                         alt={`${exercise.title} screenshot`}
-                        className=" rounded  w-full h-auto transition-opacity duration-300 group-hover:opacity-30"
+                        className="w-full rounded md:transition-opacity md:duration-300 md:group-hover:opacity-30"
                       />
                     )}
 
+                    {/* DESKTOP hover overlay */}
                     <div
-                      className="absolute inset-0 flex flex-col items-center justify-center text-center px-4
-                opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 text-white"
+                      className="
+                        hidden md:flex
+                        absolute inset-0 flex-col items-center justify-around text-center
+                        bg-black/60 text-white
+                        opacity-0 group-hover:opacity-100
+                        transition-opacity duration-300
+                      "
                     >
-                      <div>Click to Visit !!!</div>
-                      <h4>{exercise.title}</h4>
+                      <h2 className="bg-amber-50 border-2 rounded-md text-black px-2">
+                        Click to Visit !!!
+                      </h2>
 
-                      {exercise.date && (
-                        <p className="text-sm ">{exercise.date}</p>
+                      {exercise.goal && <h4>{exercise.goal}</h4>}
+
+                      {exercise.stack?.length > 0 && (
+                        <h4 className="p-2">
+                          Stack: {exercise.stack.join(", ")}
+                        </h4>
                       )}
 
-                      {exercise.goal && <p>{exercise.goal}</p>}
+                      {exercise.date && (
+                        <h3 className="p-1 bg-amber-50 border-2 rounded-md text-black">
+                          {exercise.date}
+                        </h3>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
               </a>
-              {exercise.stack?.length > 0 && (
-                <p className="p-5">Techno: {exercise.stack.join(", ")}</p>
-              )}
+
+              {/* MOBILE content */}
+              <div className="md:hidden p-3 text-center">
+                {exercise.goal && <p className="text-sm">{exercise.goal}</p>}
+
+                {exercise.stack?.length > 0 && (
+                  <p className="text-xs opacity-70 mt-1">
+                    Stack: {exercise.stack.join(" • ")}
+                  </p>
+                )}
+
+                {exercise.date && (
+                  <p className="text-xs opacity-60 mt-1">{exercise.date}</p>
+                )}
+
+                <p className="mt-2 underline font-medium">
+                  Tap image to open project →
+                </p>
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
