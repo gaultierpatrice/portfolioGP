@@ -2,7 +2,7 @@ export const exercises = [
   {
     title: "Adaopte",
     date: "January 2026",
-    goal: "Build a pet adoption platform with database approach",
+    goal: "Build a pet adoption platform with a template to mimic with database approach",
     stack: ["Vite", "React", "Tailwing", "DrawSQL"],
     image: "/image/screenshots/exercices/adaopte.png",
     link: "https://adaoptemg.vercel.app/",
@@ -10,7 +10,7 @@ export const exercises = [
   {
     title: "Dataviz",
     date: "November 2025",
-    goal: "Display data from opendata.paris.fr API",
+    goal: "Fetch Data from opendata.paris.fr API and Display them in charts with filtering options",
     stack: ["Vite", "React", "Tailwind"],
     image: "/image/screenshots/exercices/dataviz.png",
     link: "https://tournage-paris-bp-ab.vercel.app/",
@@ -18,7 +18,7 @@ export const exercises = [
   {
     title: "Quiz App",
     date: "October 2025",
-    goal: "Quiz App on Code Knowledge",
+    goal: "Quiz App on Code Knowledge with timer and best score stored in LocalStorage - First team project in Ada Tech School",
     stack: ["DOM", "Javascript"],
     image: "/image/screenshots/exercices/quizapp.png",
     link: "https://gaultierpatrice.github.io/projet-quiz-teampe/",
@@ -26,7 +26,7 @@ export const exercises = [
   {
     title: "FocusBoard",
     date: "February 2026",
-    goal: "Website to keep an online To-Do List with filtering and taging options",
+    goal: "Website to keep an online To-Do List with filtering and taging options - data is stored via LocalStorage",
     stack: ["DOM", "JAvascript", "LocalStorage"],
     image: "/image/screenshots/exercices/katatodo.png",
     link: "https://gaultierpatrice.github.io/kata_focusboard/",
@@ -34,18 +34,10 @@ export const exercises = [
   {
     title: "Weather Station",
     date: "October 2025",
-    goal: "Game with DOM manipulation",
-    stack: ["API calls"],
+    goal: "App to get the weather in any city in the world - data gathered via API and displayed ",
+    stack: ["API", "Html", "Css"],
     image: "/image/screenshots/exercices/meteo.png",
     link: "https://gaultierpatrice.github.io/kata-mini-station-meteo/",
-  },
-  {
-    title: "Responsive Design",
-    date: "October 2025",
-    goal: "Reproducing a beautifull & responsive website from a template",
-    stack: ["Html", "Css"],
-    image: "/image/screenshots/exercices/cssavance.png",
-    link: "",
   },
   {
     title: "Quote Recorder",
@@ -54,6 +46,14 @@ export const exercises = [
     stack: ["Vite", "React", "Tailwind"],
     image: "/image/screenshots/exercices/quotesapp.png",
     link: "https://quotesappreact.vercel.app/",
+  },
+  {
+    title: "Responsive Design",
+    date: "October 2025",
+    goal: "Reproducing a beautifull & responsive website from a template",
+    stack: ["Html", "Css"],
+    image: "/image/screenshots/exercices/cssavance.png",
+    link: "",
   },
   {
     title: "Morse Translator",
