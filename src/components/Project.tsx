@@ -1,12 +1,12 @@
 export default function Project() {
   return (
     <div>
-      <h2 className="p-5">Collaborative Project</h2>
-      <h3 className="p-5">
+      <h2 className="p-2 mt-5">Collaborative Project</h2>
+      <h3 className="p-2">
         In collaboration with Valentin Orrit, close friend also in retraining
       </h3>
 
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center mt-8">
         <a
           target="_blank"
           href="https://eataround.co/"

@@ -10,11 +10,11 @@ import { exercises } from "@/components/data/exercises.ts";
 
 export default function Exercise() {
   return (
-    <div id="carousel" className="mt-2 w-full flex flex-col items-center">
+    <div id="carousel" className="mt-1 w-full flex flex-col items-center">
       <h2 className="p-5">Exercises @ A.T.School</h2>
 
       <Carousel opts={{ loop: true }}>
-        <CarouselContent className="w-2xs md:w-md xl:w-2xl ">
+        <CarouselContent className="w-2xs sm:w-lg lg:w-lg xl:w-2xl ">
           {exercises.map((exercise, index) => (
             <CarouselItem key={index}>
               <h2 className="py-1 underline mb-5">{exercise.title}</h2>
